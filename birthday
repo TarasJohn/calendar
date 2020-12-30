@@ -1,0 +1,9 @@
+import datetime
+
+
+def birth_weekday(date, date_format='%d-%m-%Y'):
+    day_number = datetime.datetime.strptime(date, date_format)
+    return day_number.strftime('%A')
+
+
+print(birth_weekday('11-09-1989'))
